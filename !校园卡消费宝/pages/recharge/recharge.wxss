@@ -1,0 +1,7 @@
+/* pages/recharge/recharge.wxss */
+.cu-btn.lg {
+	padding: 0 40rpx;
+	font-size: 32rpx;
+	height: 80rpx;
+  width: 90%;
+}

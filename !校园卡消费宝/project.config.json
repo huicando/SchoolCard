@@ -1,0 +1,108 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.3",
+	"appid": "wx2ee36363cd0328af",
+	"projectname": "!%20%E6%A0%A1%E5%9B%AD%E5%8D%A1%E6%B6%88%E8%B4%B9%E5%AE%9D",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/recharge/recharge",
+					"pathName": "pages/recharge/recharge",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/adjunction/adjunction",
+					"pathName": "pages/adjunction/adjunction",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/logout/logout",
+					"pathName": "pages/logout/logout",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/locking/locking",
+					"pathName": "pages/locking/locking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/user/user",
+					"pathName": "pages/user/user",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lists/lists",
+					"pathName": "pages/lists/lists",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lists/lists",
+					"pathName": "pages/lists/lists",
+					"scene": null
+				}
+			]
+		}
+	}
+}

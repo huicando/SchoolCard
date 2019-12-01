@@ -1,0 +1,24 @@
+<!--pages/adjunction/adjunction.wxml-->
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top">
+		<view class="title">金额</view>
+		<input placeholder="请输入消费" name="price" value="{{message}}" ></input>
+     <text class="cuIcon-rechargefill text-orange"></text>
+	</view>
+  <view class="cu-form-group margin-top">
+		<view class="title">消费方式</view>
+		<picker bindchange="PickerChange" value="{{index}}" range="{{picker}}" name="way" value="{{message}}">
+			<view class="picker">
+				{{index?picker[index]:'选择消费方式'}}
+			</view>
+		</picker>
+	</view>
+		<view class="cu-form-group align-start margin-top">
+		<view class="title">备注</view>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="输入对这笔账单的备注" name="mark" value="{{message}}"></textarea>
+	</view>
+  <view class="padding-xl">
+    <button class="cu-btn block bg-green margin-tb-sm lg"  formType="submit">
+    <text class="cuIcon-add"></text>添加</button>
+</view>
+</form>

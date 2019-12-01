@@ -1,0 +1,19 @@
+<view class="bg-img bg-mask padding-tb-xl" style="background-image: url('/pages/logo/hui2.jpeg');height: 500rpx;"> 
+
+    <view>
+      <image class='head1' src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='name'>{{userInfo.nickName}}</view>
+    <view class="card text-bold margin-top">卡号:{{card?card.cardId:'暂未绑定'}}</view>
+    <view class="card text-bold">余额:{{card?card.price+'元':'暂无'}}</view>
+</view>
+<button wx:if='{{!userInfo}}' open-type='getUserInfo' bindgetuserinfo="getUserInfo" >登陆</button>
+  <view class='nav-list margin-top'>
+    <navigator  open-type="navigate" hover-class='none' url="/pages/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{item.name}}</view>
+      <text class='cuIcon-{{item.icon}}'></text>
+    </navigator>
+  </view>
+<view class='cu-tabbar-height'></view>
+

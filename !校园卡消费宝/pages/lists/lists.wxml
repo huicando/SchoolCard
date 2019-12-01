@@ -1,0 +1,28 @@
+  <view class="cu-bar bg-white solid-bottom">
+    <view class="action">
+      <text class="cuIcon-title text-green "></text>剩余{{card.price}}元 
+    </view>
+  </view>
+ <view class="cu-list menu margin top" wx:for="{{record}}" wx:key>
+   <view class="cu-item">
+      <view class="content">
+        <text class="cuIcon-rechargefill text-orange"></text>
+        <text class="text-orange">{{item.price>0?'+'+item.price:item.price}}元</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content">
+        <text class="cuIcon-shopfill text-green"></text>
+        <text class="text-grey">{{item.way}}</text>
+      </view>
+    </view>
+    <view class="cu-item">
+      <view class="content padding-tb-sm">
+        <view>
+          <text class="cuIcon-infofill text-blue margin-right-xs"></text> 备注</view>
+        <view class="text-gray text-sm">
+          <text class="margin-right-xs"></text>{{item.mark?item.mark:'暂时无描述...'}}</view>
+      </view>
+    </view>
+   
+  </view>

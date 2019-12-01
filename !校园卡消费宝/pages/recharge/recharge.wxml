@@ -1,0 +1,23 @@
+<!--pages/recharge/recharge.wxml-->
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top">
+		<view class="title">卡号</view>
+		<input placeholder="请输入校园卡账号" name="cardId" value="{{message}}"></input>
+     <text class="cuIcon-card text-green"></text>
+	</view>
+	<view class="cu-form-group margin-top">
+		<view class="title">密码</view>
+		<input placeholder="请输入密码" type="password" name="password" value="{{message}}" ></input>
+    <text class="cuIcon-warnfill text-red"></text>
+	</view>
+  	<view class="cu-form-group margin-top">
+		<view class="title">金额</view>
+		<input placeholder="请输入金额" name="price" value="{{message}}"></input>
+    <text class="cuIcon-rechargefill text-orange"></text>
+	</view>
+
+ <view class="padding-xl">
+    <button class="cu-btn block bg-green margin-tb-sm lg" formType="submit">
+    <text class="cuIcon-pay "></text>支付</button>
+</view>
+</form>
