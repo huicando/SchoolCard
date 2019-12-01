@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/schoolcard?serverTimezone=UTC
+    username: root
+    password: 1234
+    driverClass: com.mysql.cj.jdbc.Driver
+
+# 之后的填写mybatis的mapper书写路径
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.hui.pojo
+
+server:
+  #项目名，如果不设定，默认是 /
+  servlet:
+    context-path: /schoolCard

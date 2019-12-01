@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hui.dao.RecordMapper">
+
+    <insert id="addRecord" parameterType="Record">
+        insert into record (cardId,mark,way,price) values (#{cardId},#{mark},#{way},#{price});
+    </insert>
+    <select id="findByCardId" parameterType="String" resultType="Record">
+        select * from record where cardId=#{cardId};
+    </select>
+    <select id="countMoneyByCardId" parameterType="String" resultType="Float">
+        select sum(price) from record where cardId=#{cardId};
+    </select>
+    <select id="countByCardId" parameterType="String" resultType="Integer">
+        select count(*) from  record where cardId=#{cardId};
+    </select>
+
+</mapper>

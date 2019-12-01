@@ -1,0 +1,17 @@
+com\hui\pojo\User.class
+com\hui\dao\RecordMapper.class
+com\hui\service\impl\RecordServiceImpl.class
+com\hui\service\RecordService.class
+com\hui\MybatisTest.class
+com\hui\pojo\Card.class
+com\hui\controller\UserController.class
+com\hui\dao\UserMapper.class
+com\hui\CardApplication.class
+com\hui\service\UserService.class
+com\hui\pojo\Record.class
+com\hui\service\impl\UserServiceInpl.class
+com\hui\controller\RecordController.class
+com\hui\controller\CardController.class
+com\hui\service\impl\CardServiceImpl.class
+com\hui\service\CardService.class
+com\hui\dao\CardMapper.class

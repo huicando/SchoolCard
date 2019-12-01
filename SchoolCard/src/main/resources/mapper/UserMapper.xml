@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hui.dao.UserMapper">
+<select id="findByOpenid" resultType="User">
+        select * from user where openid = #{openid};
+    </select>
+<insert id="addUser" parameterType="User">
+        insert into user(openid,nickName,avatarUrl,cardId) values (#{openid},#{nickName},#{avatarUrl},#{cardId});
+    </insert>
+<update id="updateUser" parameterType="User">
+        update user set nickName=#{nickName},avatarUrl=#{avatarUrl},cardId=#{cardId} where openid = #{openid};
+    </update>
+
+<update id="updateCardId" parameterType="User">
+        update user set cardId=#{cardId} where openid = #{openid};
+    </update>
+</mapper>

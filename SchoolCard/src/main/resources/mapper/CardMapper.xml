@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hui.dao.CardMapper">
+
+    <insert id="addCard" parameterType="Card">
+        insert into card(cardId,password) values (#{cardId},#{password});
+    </insert>
+    <select id="checkCard" parameterType="Card" resultType="String">
+        select password from card where cardId=#{cardId};
+    </select>
+
+
+</mapper>
